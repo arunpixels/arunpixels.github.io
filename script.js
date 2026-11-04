@@ -102,7 +102,7 @@ const projectDetails = {
     title: "Campeon",
     category: "E-commerce · Website Redesign",
     images: [
-      "projects/Campeon new 1.png"
+      "projects/Campeon new1x.png"
     ]
     
   },
