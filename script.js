@@ -139,8 +139,17 @@ document.querySelectorAll(".project-visual[data-project], .masonry-card[data-pro
     project.images.forEach(imagePath => {
       const image = document.createElement("img");
       image.src = imagePath;
-      image.alt = project.title;
-      modalBody.appendChild(image);
+image.alt = project.title;
+
+image.onerror = () => {
+  console.error("Campeon modal image failed:", image.src);
+};
+
+image.onload = () => {
+  console.log("Modal image loaded:", image.src);
+};
+
+modalBody.appendChild(image);
     });
 
     projectModal.classList.add("active");
