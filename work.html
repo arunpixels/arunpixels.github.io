@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selected Work | Arun Kumar</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="work.css">
+  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <a href="index.html#home" class="logo">
+      <img src="images/ak-logo.svg" alt="AK Logo">
+    </a>
+
+    <nav>
+      <a href="index.html#home">Home</a>
+      <a href="work.html" class="active">Work</a>
+      <a href="resume.html">Resume</a>
+<a href="contact.html">Contact</a>    </nav>
+  </header>
+
+  <main class="work-page">
+
+    <section class="work-intro">
+      <p class="eyebrow">SELECTED PROJECTS · 04</p>
+      <h1>Ideas into <span>experiences.</span></h1>
+      <p>
+        A collection of digital products and experiences
+        across enterprise, e-commerce and mobile applications.
+      </p>
+    </section>
+
+    <div class="project-filters">
+  <button class="filter-btn active" data-filter="all">All Projects</button>
+  <button class="filter-btn" data-filter="enterprise">Enterprise</button>
+  <button class="filter-btn" data-filter="website">Website</button>
+  <button class="filter-btn" data-filter="mobile">Mobile App</button>
+</div>
+   
+<section class="masonry-grid">
+
+  <article class="masonry-card procurement" data-project="procurement" data-category="enterprise">
+    <img src="projects/Screenshot 2026-11-02 150509.png"
+         alt="Procurement Platform">
+    <div class="card-info">
+      <span>Enterprise SaaS</span>
+      <h2>Procurement Platform</h2>
+    </div>
+  </article>
+
+  <article class="masonry-card campeon" data-project="campeon" data-category="website">
+    <img src="projects/Campeon home.png"
+         alt="Campeon Website Redesign">
+    <div class="card-info">
+      <span>E-commerce · Website</span>
+      <h2>Campeon</h2>
+    </div>
+  </article>
+
+ <article class="masonry-card cafe" data-project="cafe" data-category="mobile">
+    <img src="projects/cfb home pic.png"
+         alt="Cafe Ordering Mobile App">
+    <div class="card-info">
+      <span>Mobile Application</span>
+      <h2>Cafe Wild Beans</h2>
+    </div>
+  </article>
+
+  <article class="masonry-card studio" data-project="studio" data-category="website">
+    <img src="projects/Screenshot 2026-11-02 150044.png"
+         alt="Studio Booking Website">
+    <div class="card-info">
+      <span>Booking Platform</span>
+      <h2>Studio Booking</h2>
+    </div>
+  </article>
+
+</section>
+  
+</main>
+
+<section id="contact" class="contact">
+
+  <div class="contact-content">
+    <p class="eyebrow">CONTACT</p>
+
+    <h2>Have a product that<br>needs to feel simple?</h2>
+
+    <p class="contact-email">
+      arunkumar531b@gmail.com
+    </p>
+
+    <div class="contact-buttons">
+  <a href="contact.html" class="contact-btn primary">
+    Let's talk →
+  </a>
+
+  <a href="https://www.linkedin.com/in/arunkumar-b-875635312/"
+     target="_blank" rel="noopener noreferrer" class="contact-btn">
+    LinkedIn
+  </a>
+
+  <a href="https://www.behance.net/arunkumarb9"
+     target="_blank" rel="noopener noreferrer" class="contact-btn">
+    Behance
+  </a>
+</div>
+
+</section>
+<footer>
+  <span>© 2026 ArunKumar</span>
+  <a href="https://www.linkedin.com/" target="_blank">LinkedIn ↗</a>
+</footer>
+
+
+  <!-- PROJECT MODAL -->
+<div class="project-modal" id="projectModal">
+  <div class="project-modal-content">
+
+    <div class="project-modal-header">
+      <div>
+        <p class="project-modal-category" id="modalCategory">
+          PROJECT CATEGORY
+        </p>
+        <h2 id="modalTitle">Project Name</h2>
+      </div>
+
+      <button class="project-modal-close"
+              id="modalClose"
+              aria-label="Close project">
+        &times;
+      </button>
+    </div>
+
+    <div class="project-modal-body" id="modalBody"></div>
+
+  </div>
+</div>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+/* CONTACT PANEL */
+
+.contact {
+  background: #151F1D;
+  color: #FFFFFF;
+  padding: 75px 75px;
+  border-radius: 28px;
+  margin: 40px 30px 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-content {
+  max-width: 750px;
+  margin-left: 0;
+  text-align: left;
+}
+
+.contact .eyebrow {
+  color: #9460e7;
+  letter-spacing: 2px;
+}
+
+.contact h2 {
+  font-size: clamp(36px, 5vw, 62px);
+  line-height: 1.1;
+  margin: 25px 0;
+  color: #FFFFFF;
+}
+
+.contact-email {
+  color: #9460e7;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 25px;
+  border: 1px solid #9460e7;
+  border-radius: 50px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.contact-btn.primary {
+  background: #9460e7;
+  color: #f7faf9;
+  border-color: #9460e7;
+}
+
+.contact-btn:hover {
+  transform: translateY(-4px);
+}
+/* BOTTOM FOOTER */
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 25px 0 35px;
+  color: #687477;
+  font-size: 13px;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.footer-links a {
+  color: #687477;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #45388F;
+}
+
+@media (max-width: 600px) {
+  .contact {
+    padding: 45px 25px;
+    border-radius: 20px;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    gap: 18px;
+  }
+}
+/* DECORATIVE CONTACT CIRCLE */
+
+.contact::after {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  border: 65px solid #45388F;
+  border-radius: 50%;
+  top: -190px;
+  right: -100px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.contact-content {
+  position: relative;
+  z-index: 1;
+}

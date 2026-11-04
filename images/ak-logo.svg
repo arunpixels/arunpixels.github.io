@@ -1,0 +1,20 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248 170">
+  <g fill="#42348B">
+    <!-- Main A and left leg -->
+    <path d="M8 163 L67 48 Q75 34 87 34 Q100 34 107 48 L166 163 H131 L87 77 L43 163 Z"/>
+
+    <!-- K vertical stem -->
+    <path d="M126 35 H155 V163 H126 Z"/>
+
+    <!-- K upper diagonal -->
+    <path d="M145 101 L188 35 H225 L174 98 Z"/>
+
+    <!-- K lower diagonal -->
+    <path d="M145 96 L176 88 L240 163 H204 Z"/>
+  </g>
+
+  <!-- Lighter purple accent -->
+  <path fill="#8065D9"
+        d="M51 163 L76 119 Q79 114 85 114 H108 L80 163 Z"/>
+</svg>
