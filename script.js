@@ -93,34 +93,27 @@ const projectDetails = {
   procurement: {
     title: "Procurement Platform",
     category: "Enterprise SaaS · Web Application",
-    images: [
-      "projects/Nx f1.png"
-    ]
+    images: ["projects/Nx f1.png"]
   },
 
   campeon: {
     title: "Campeon",
     category: "E-commerce · Website Redesign",
-    images: [
-      "projects/Campeon new1x.png"
-    ]
-    
+    images: ["projects/Campeon new1x.png"]
   },
 
   cafe: {
     title: "Cafe Wild Beans",
     category: "Food & Beverage · Mobile Application",
-    images: [
-      "projects/cfb case study.png"
-    ]
+    images: ["projects/cfb case study.png"]
   },
 
-  studio: {
-    title: "Studio Booking Website",
-    category: "Booking Platform · Web Application",
-    images: [
-      "projects/Screenshot 2026-11-02 150044.png"
-    ]
+ 
+
+  farm: {
+    title: "Farm Management App",
+    category: "Agriculture · Mobile Application",
+    images: ["projects/farm app/kissan portfolio.png"]
   }
 };
 
@@ -128,6 +121,8 @@ const projectDetails = {
 document.querySelectorAll(".project-visual[data-project], .masonry-card[data-project]").forEach(card => {
   function openProject() {
     const project = projectDetails[card.dataset.project];
+    console.log("Project:", card.dataset.project);
+console.log("Images:", project?.images);
 
     if (!project) return;
 
@@ -139,17 +134,8 @@ document.querySelectorAll(".project-visual[data-project], .masonry-card[data-pro
     project.images.forEach(imagePath => {
       const image = document.createElement("img");
       image.src = imagePath;
-image.alt = project.title;
-
-image.onerror = () => {
-  console.error("Campeon modal image failed:", image.src);
-};
-
-image.onload = () => {
-  console.log("Modal image loaded:", image.src);
-};
-
-modalBody.appendChild(image);
+      image.alt = project.title;
+      modalBody.appendChild(image);
     });
 
     projectModal.classList.add("active");
